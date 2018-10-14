@@ -88,7 +88,7 @@ class BSMMembersite
             return false;
         }
 
-        if(!$this->SendSMS($formvars))
+        if(!$this->SendSMSAPI($formvars))
         {
             return false;
         }
@@ -96,7 +96,7 @@ class BSMMembersite
         return true;
     }
 
-    function SendSMS(&$formvars)
+    function SendSMSAPI(&$formvars)
     {
         $post = [
             'userkey' => 'g5u902',
